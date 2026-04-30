@@ -1,0 +1,15 @@
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.animation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+}
