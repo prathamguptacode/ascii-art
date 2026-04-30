@@ -89,7 +89,7 @@ export default function ASCIIAnimation({
 				);
 
 				const framePromises = frameFiles.map(async (filename) => {
-					const response = await fetch(`/${frameFolder}/${filename}`);
+					const response = await fetch(`/ascii-art/${frameFolder}/${filename}`);
 					if (!response.ok) {
 						throw new Error(`Failed to fetch ${filename}: ${response.status}`);
 					}
