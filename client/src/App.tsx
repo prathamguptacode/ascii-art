@@ -13,6 +13,23 @@ function App() {
  ########   ########     ###     ###    ### ###     ###     ###     ########## ########## ########## ########## ###    ### 
   `
 
+  const width = screen.width;
+
+  if (width < 600) {
+    return (
+      <div className='mob'>
+        <p>See the world around with coTraveller</p>
+        <div className='animation'>
+          <ASCIIAnimation
+            fps={30}
+            frameCount={126}
+            frameFolder="frames"
+          />
+        </div>
+      </div>
+    )
+  }
+
 
   return (
     <div>
